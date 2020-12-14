@@ -51,4 +51,8 @@ Pour récupérer les cdn à jour de bootstrap rendez-vous ici:
   
 (Attention la version 5 de bootstrap n'importe plus jquery et à compiler le bundle de bootstrap avec popper)
 
+<<<<<<< HEAD
 Attention tout les chemins vers les fichiers ou dossier sont unique à ce projet, à vous de l'adapter au votre !
+=======
+Attention tout les chemins vers les fichiers ou dossier sont unique à ce projet, à vous de l'adapter au votre !
+>>>>>>> a1f423c830a6209d798ef80aa56ed405befbd8f0
