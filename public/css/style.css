@@ -10572,8 +10572,34 @@ textarea.form-control-lg {
 }
 /* Global Sass */ 
 /* commentaire persistant */ 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: cursive;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.img-header {
+  margin: 6vh 0;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/code-blue.jpg);
+}
+
+.img-header-descr {
+  margin: 6vh 0;
+  height: 45vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/code-blue.jpg);
 }
 
 /* Admin Sass */ 

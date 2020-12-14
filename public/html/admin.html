@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titre de la Page -->
+    <title>Admin | Tuto Bootrstrap</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/81855dfb83.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Style Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <!-- / Head -->
+  <body>
+    
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top border-bottom border-dark navbar-dark bg-dark px-3"
+    >
+      <a class="navbar-brand" href="#">Admin</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Lien vers page home -->
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">retour home</a>
+          </li>
+          <!-- Modal de déconnexion -->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#modalLogout"
+              href="admin.html"
+              >Se Déconnecter</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- / NavBar -->
+
+    <!-- Collapse -->
+    <div class="container mt-5 pt-4">
+      <div class="accordion" id="accordionExample">
+
+        <!-- Gestion Articles -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Gestion des articles
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-warning btn-sm"
+                        data-toggle="modal"
+                        data-target="#modalEdit"
+                      >
+                        <i class="far fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger btn-sm"
+                        data-toggle="modal"
+                        data-target="#modalDelete"
+                      >
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- / Gestion Articles -->
+
+        <!-- Gestion Users -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Gestion des users
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+            </div>
+          </div>
+        </div>
+        <!-- / Gestion Users -->
+
+      </div>
+    </div>
+    <!-- / Collapse -->
+
+    <!-- Modal Edit -->
+    <div
+      class="modal fade"
+      id="modalEdit"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Edit</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal Edit -->
+
+    <!-- Modal Delete -->
+    <div
+      class="modal fade"
+      id="modalDelete"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Delete</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal Delete -->
+
+    <!-- Modal Logout -->
+    <div
+      class="modal fade"
+      id="modalLogout"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Logout</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal Logout -->
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center border-top border-dark mt-2">
+      <h5>© By Drk - 2020</h5>
+    </footer>
+    <!-- / Footer -->
+  </body>
+
+  <!-- Script Jquery -->
+  <script src="../js/jquery.js"></script>
+  <!-- Script Popper -->
+  <script src="../js/popper.js"></script>
+  <!-- Script Bootstrap -->
+  <script src="../js/bootstrap.js"></script>
+</html>

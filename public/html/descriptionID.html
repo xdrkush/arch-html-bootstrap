@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titre de la Page -->
+    <title>Home | Tuto Bootrstrap</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/81855dfb83.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Style Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <!-- / Head -->
+  <body>
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top border-bottom border-dark navbar-light bg-light px-3"
+    >
+      <!-- Titre -->
+      <a class="navbar-brand" href="../../index.html">Home</a>
+      <!-- Boutton menu (hamburger) pour responcive -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Lien Vers page Admin -->
+          <li class="nav-item">
+            <a class="nav-link" href="/public/html/admin.html">Admin</a>
+          </li>
+          <!-- Boutton modal de connexion -->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#modalLogin"
+              href="admin.html"
+              >Se Connecter</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- / NavBar -->
+
+    <!-- Modal Se Connecter -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Login</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal -->
+
+    <!-- Header -->
+    <header class="container-fluid img-header-descr">
+      <div class="d-flex align-items-center h-100">
+        <div class="flex-column">
+          <h1 class="text-white font-weight">Titre</h1>
+          <p class="text-white font-weight">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- / Header -->
+
+    <div class="container pb-5">
+      <div class="row">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat cupiditate praesentium eveniet veritatis dolorum voluptates, ipsum nihil dolor impedit deserunt, totam debitis quos provident ratione recusandae error, vel facilis dolores.
+      </div>
+    </div>
+
+    <!-- Commentaire -->
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <h4>Commentaire</h4>
+      </div>
+      <!-- Commentaire 1 -->
+      <div class="media row my-2">
+        <img
+          src="../images/code-blue.jpg"
+          class="col-md-1 rounded-circle"
+          alt="..."
+        />
+        <div class="media-body col-md-11">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+          scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+          vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+          vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <!-- Commentaire 2 -->
+      <div class="media row my-2">
+        <img
+          src="../images/code-blue.jpg"
+          class="col-md-1 rounded-circle"
+          alt="..."
+        />
+        <div class="media-body col-md-11">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+          scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+          vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+          vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+    </div>
+    <!-- / Commentaire -->
+
+    <!-- Liste de card -->
+    <div class="container py-4">
+      <div class="col-md-12 text-center">
+        <h4>Les derniers articles</h4>
+      </div>
+      <div class="card-group">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="/public/images/code-blue.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img
+            src="/public/images/code-blue.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img
+            src="/public/images/code-blue.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Liste de card -->
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center border-top border-dark">
+      <h5>© By Drk - 2020</h5>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Import JS -->
+    <!-- Jquery -->
+    <script src="../js/jquery.js"></script>
+    <!-- Popper -->
+    <script src="../js/popper.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>
