@@ -53,8 +53,7 @@ Pour récupérer les cdn à jour de bootstrap rendez-vous ici:
 
 Attention tout les chemins vers les fichiers ou dossier sont unique à ce projet, à vous de l'adapter au votre !
 
-
-## Mettre en un site html en production sur un serveur ubuntu (vps ovh) avec nginx
+## Mettre en production un site html sur un serveur ubuntu (vps ovh) avec nginx
 
 Pré-requis:
   - un serveur avec accès ssh
@@ -168,4 +167,3 @@ Erreur connu:
 
 En + (avancé):
   - Déployer sur github en une ligne de commande: https://medium.com/@stadja/comment-d%C3%A9ployer-sur-un-serveur-distant-en-une-commande-git-pas-%C3%A0-pas-bdcf5aaf172d
-  
